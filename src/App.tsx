@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar";
 import GameGrid from "./components/GameGrid";
 const App = () => {
   return (
+    <>
     <Grid
       templateAreas={{
         base: `"nav" "main"`,
@@ -18,7 +19,10 @@ const App = () => {
       <GridItem area={"main"}>
         <GameGrid />
       </GridItem>
+      
+      
     </Grid>
+    </>
   );
 };
 
