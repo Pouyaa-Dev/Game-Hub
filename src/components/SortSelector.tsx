@@ -20,10 +20,10 @@ const SortSelector = ({ onSelectSortOrder , sortOrder}: Props) => {
 
   return (
     <Menu>
-      <MenuButton as={Button} rightIcon={<BsChevronDown />}>
+      <MenuButton fontSize={"xl"} marginRight={2} as={Button} rightIcon={<BsChevronDown />}>
         Order by : {currentSortOrder?.label || "Relevance"}
       </MenuButton>
-      <MenuList>
+      <MenuList fontSize={"xl"}>
         {SortOrders.map((sort) => (
           <MenuItem
             onClick={() => {
